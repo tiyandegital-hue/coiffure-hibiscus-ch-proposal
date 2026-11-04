@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Démo interactive — Assistant WhatsApp | Coiffure Hibiscus</title>
+  <meta name="description" content="Essayez l'assistante WhatsApp comme une vraie cliente : réservation, déplacement, annulation, tarifs. Démonstration interactive.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23C0455F'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Georgia'>H</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Coiffure Hibiscus — accueil">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span><span class="brand-name" data-business="name">Coiffure Hibiscus</span>
+        <span class="brand-sub">Assistant WhatsApp · Proposition</span></span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="bot-demo.html" aria-current="page">Démo du bot</a></li>
+          <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="nav-cta">Discuter du projet</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding-top: clamp(48px, 6vw, 88px)">
+      <div class="wrap">
+        <div class="section-head rise">
+          <p class="eyebrow"><span class="dot">●</span> Démonstration interactive</p>
+          <h2>Mettez-vous dans la peau<br>d'une cliente.</h2>
+          <p>Choisissez un scénario à gauche, puis répondez comme une vraie cliente en touchant les réponses proposées. L'assistante fait le reste.</p>
+          <p class="demo-note" style="text-align:left; margin-top: 10px;">Scénarios fictifs — <span id="demo-price-note"></span></p>
+        </div>
+        <div class="demo-layout">
+          <div class="scenario-list rise" role="tablist" aria-label="Scénarios de démonstration">
+            <button type="button" class="scenario-btn active" data-scenario="reservation" role="tab">
+              <strong>Réserver un rendez-vous</strong>
+              <span>Balayage réservé en 40 secondes, sans appeler.</span>
+            </button>
+            <button type="button" class="scenario-btn" data-scenario="deplacer" role="tab">
+              <strong>Déplacer un rendez-vous</strong>
+              <span>Un imprévu ? Le créneau bouge sans déranger le salon.</span>
+            </button>
+            <button type="button" class="scenario-btn" data-scenario="annulation" role="tab">
+              <strong>Annuler un rendez-vous</strong>
+              <span>Le créneau libéré redevient réservable aussitôt.</span>
+            </button>
+            <button type="button" class="scenario-btn" data-scenario="tarifs" role="tab">
+              <strong>Demander les tarifs</strong>
+              <span>Réponse instantanée, même dimanche à 23h.</span>
+            </button>
+          </div>
+          <div class="chat-panel rise">
+            <div class="phone" role="log" aria-label="Conversation WhatsApp simulée">
+              <div class="phone-notch"><span></span></div>
+              <div class="wa-head">
+                <span class="wa-avatar" aria-hidden="true">H</span>
+                <span><span class="wa-name" data-business="name">Coiffure Hibiscus</span><br><span class="wa-status">en ligne</span></span>
+              </div>
+              <div class="wa-body" id="chat-body" aria-live="polite"></div>
+              <div class="wa-input" aria-hidden="true">
+                <span class="fake-field">Choisissez une réponse ci-dessous</span>
+                <span class="fake-send"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 20v-6l8-2-8-2V4l19 8-19 8z" fill="#fff"/></svg></span>
+              </div>
+            </div>
+            <div class="quick-replies" id="quick-replies" aria-label="Réponses proposées"></div>
+            <button type="button" class="demo-reset" id="demo-reset-all">Recommencer le scénario</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="cta-band rise">
+          <h2>Convaincue ? <em>Imaginez-le dans votre salon.</em></h2>
+          <p>Connecté à votre vrai numéro WhatsApp, avec vos prestations, vos tarifs et vos horaires.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="comment-ca-marche.html">Comment ça marche</a>
+            <a class="btn btn-ghost" style="color:#fff; border-color: rgba(255,255,255,0.3)" href="tarifs.html">Voir les tarifs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">H</span>
+          <span><span class="brand-name" data-business="name">Coiffure Hibiscus</span>
+          <span class="brand-sub">Assistant WhatsApp · Proposition</span></span></a>
+          <p>Proposition de démonstration réalisée par Tiyan Digital — un assistant de réservation WhatsApp pensé pour votre salon.</p>
+          <p><span class="demo-badge">Démo conceptuelle</span></p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="bot-demo.html">Démo du bot</a></li>
+            <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="conditions.html">Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span data-year>2026</span> <span data-business="name">Coiffure Hibiscus</span> — proposition Tiyan Digital.</span>
+        <span>Estavayer-le-Lac, Suisse romande</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Parlons de votre salon | Coiffure Hibiscus</title>
+  <meta name="description" content="Contactez Tiyan Digital pour discuter de l'assistante de réservation WhatsApp pour votre salon. Devis gratuit.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23C0455F'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Georgia'>H</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Coiffure Hibiscus — accueil">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span><span class="brand-name" data-business="name">Coiffure Hibiscus</span>
+        <span class="brand-sub">Assistant WhatsApp · Proposition</span></span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="bot-demo.html">Démo du bot</a></li>
+          <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="bot-demo.html" class="nav-cta">Essayer la démo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding-top: clamp(48px, 6vw, 88px)">
+      <div class="wrap">
+        <div class="section-head rise">
+          <p class="eyebrow"><span class="dot">●</span> Contact</p>
+          <h2>Parlons de votre salon.</h2>
+          <p>Deux minutes pour décrire votre salon — nous revenons vers vous avec un devis clair, gratuit et sans engagement.</p>
+        </div>
+        <div class="form-card rise">
+          <form id="contact-form" novalidate>
+            <div class="field" data-field="name">
+              <label for="f-name">Votre nom <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="f-name" name="name" autocomplete="name" required aria-describedby="f-name-err">
+              <p class="error" id="f-name-err">Merci d'indiquer votre nom.</p>
+            </div>
+            <div class="field" data-field="phone">
+              <label for="f-phone">Téléphone / WhatsApp <span class="req" aria-hidden="true">*</span></label>
+              <input type="tel" id="f-phone" name="phone" autocomplete="tel" required aria-describedby="f-phone-err" placeholder="+41 …">
+              <p class="error" id="f-phone-err">Merci d'indiquer un numéro valide.</p>
+            </div>
+            <div class="field" data-field="message">
+              <label for="f-msg">Votre salon en quelques mots <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="f-msg" name="message" required aria-describedby="f-msg-err" placeholder="Prestations, horaires, ce qui vous ferait gagner du temps…"></textarea>
+              <p class="error" id="f-msg-err">Quelques mots nous aideront à préparer votre devis.</p>
+            </div>
+            <label class="consent">
+              <input type="checkbox" id="f-consent" required>
+              <span>J'accepte d'être recontacté(e) au sujet de cette proposition. Vos données ne servent qu'à préparer votre devis — voir la <a href="confidentialite.html">politique de confidentialité</a>.</span>
+            </label>
+            <button type="submit" class="btn btn-primary" style="width:100%">Envoyer ma demande</button>
+            <p class="form-note" id="form-status" role="status"></p>
+            <p class="form-note">Page de démonstration : ce formulaire n'envoie vos données nulle part. Pour un vrai échange : <a href="mailto:contact@tiyandegital.com">contact@tiyandegital.com</a>.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand">
+          <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">H</span>
+          <span><span class="brand-name" data-business="name">Coiffure Hibiscus</span>
+          <span class="brand-sub">Assistant WhatsApp · Proposition</span></span></a>
+          <p>Proposition de démonstration réalisée par Tiyan Digital — un assistant de réservation WhatsApp pensé pour votre salon.</p>
+          <p><span class="demo-badge">Démo conceptuelle</span></p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="bot-demo.html">Démo du bot</a></li>
+            <li><a href="comment-ca-marche.html">Comment ça marche</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Légal</h4>
+          <ul>
+            <li><a href="confidentialite.html">Confidentialité</a></li>
+            <li><a href="conditions.html">Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span data-year>2026</span> <span data-business="name">Coiffure Hibiscus</span> — proposition Tiyan Digital.</span>
+        <span>Estavayer-le-Lac, Suisse romande</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/chat.js"></script>
+  <script>
+    /* Validation du formulaire de démonstration (aucun envoi réel). */
+    (function () {
+      var form = document.getElementById("contact-form");
+      if (!form) return;
+      var status = document.getElementById("form-status");
+      function setInvalid(name, bad) {
+        var wrap = form.querySelector('[data-field="' + name + '"]');
+        if (wrap) wrap.classList.toggle("invalid", bad);
+        return !bad;
+      }
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var ok = true;
+        var name = document.getElementBy
+...[truncated 1128 chars]
